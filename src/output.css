@@ -742,6 +742,10 @@ video {
   min-height: 3rem;
 }
 
+.min-h-4 {
+  min-height: 1rem;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -780,6 +784,10 @@ video {
 
 .min-w-\[12\.5rem\] {
   min-width: 12.5rem;
+}
+
+.min-w-4 {
+  min-width: 1rem;
 }
 
 .max-w-\[36\.625rem\] {
@@ -1022,6 +1030,14 @@ video {
   padding-bottom: 2rem;
 }
 
+.pt-\[7\.5rem\] {
+  padding-top: 7.5rem;
+}
+
+.pt-\[2\.5rem\] {
+  padding-top: 2.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1076,6 +1092,10 @@ video {
 
 .font-normal {
   font-weight: 400;
+}
+
+.leading-normal {
+  line-height: 1.5;
 }
 
 .text-\[\#0071eb\] {
