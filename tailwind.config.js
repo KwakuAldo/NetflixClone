@@ -5,8 +5,9 @@ module.exports = {
     screens: {
       sm: "480px",
       md: "600px",
-      lg: "1024px",
+      lg: "960px",
       xl: "1280px",
+      '2xl': "1920px",
     },
   
     extend: {
@@ -25,7 +26,10 @@ module.exports = {
       },
       spacing: {
         'custom': 'calc(100% + 0.75rem)',
-        'basisW': 'calc(50% - 0.75rem)'
+        'basisW': 'calc(50% - 0.75rem)',
+        'headerW': 'calc(66.66666666666666% - 6rem)',
+        'lgMaxW': 'calc(100% - 4rem)',
+        'basisW1': 'calc(25% - 0.75rem)'
       }
     },
   },

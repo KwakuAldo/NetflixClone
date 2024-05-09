@@ -7,14 +7,14 @@
     <title>Netflix Clone</title>
 </head>
 <body class="bg-black">
-    <main class="container relative bg-hero-image">
-        <header class="p-6">
+    <main class="max-w-full relative bg-hero-image">
+        <header class="p-6 md:px-8">
             <div class="flex flex-row justify-between">
-                <img class="w-[5.5rem]" src="images/Logo.png" alt="Netflix logo in red color">
+                <img class="w-[5.5rem] md:w-[9.25rem] md:h-10" src="images/Logo.png" alt="Netflix logo in red color">
                 <button class="bg-netflixRed text-white py-1 px-4 rounded-md">Sign In</button>
             </div>
         </header>
-        <div class="pt-[2.5rem] pb-8 border-b-8 border-greyishBlack">
+        <div class="pt-[2.5rem] pb-8 border-b-8 border-greyishBlack lg:min-h[43.75rem] lg:pt-[8.875rem] lg:pb-24 lg:px-0">
             
             <div class="flex flex-col items-center text-center text-white m-auto max-w-custom">
                 <div class="flex flex-col basis-1/2">
@@ -25,13 +25,12 @@
                     <div class="text-center max-w-[61.5rem] m-auto px-6">
                         <form action="">
                             <h3 class="text-[1.125rem]">Ready to watch? Enter your email to create or restart your membership.</h3>
-                            <div class="flex flex-col items-center mt-4 bg-transparent">
-                                <div data-uia="field-email+container" class="w-full relative inline-flex justify-center flex-wrap">
-                                    <input type="email" placeholder="Email address" aria-label="email input field"
-                                        class="text-base w-full px-4 py-4 bg-transparent border leading-normal min-w-4 min-h-4" required>
+                            <div class="flex flex-col md:flex-row items-center mt-4 bg-transparent gap-x-2">
+                                <div data-uia="field-email+container" class="w-full md:w-2/3 relative inline-flex justify-center flex-wrap">
+                                    <input type="email" placeholder="Email address" aria-label="email input field" class="text-base w-full md:min-w-[12.5rem] px-4 pt-4 pb-3.5 bg-transparent border leading-normal min-w-4 min-h-4 rounded-md" required>
                                 </div>
                                 <button
-                                    class="bg-netflixRed text-[1.125rem] text-white font-medium py-2 px-4 rounded-md mt-4 min-h-12 w-auto">Get
+                                    class="bg-netflixRed text-[1.125rem] text-white font-medium py-2 px-4 rounded-md mt-4 md:mt-0 md:w-1/3 min-h-[3.5rem] w-auto">Get
                                     Started</button>
                             </div>
                         </form>
@@ -40,14 +39,14 @@
             </div>
         </div>
         <div class="relative flex justify-center text-center h-full min-h-auto py-14 bg-black text-white border-b-8 border-greyishBlack">
-            <div class="flex flex-col text-center items-center m-auto max-w-custom">
-                <div class="flex flex-col text-center w-full basis-1/2">
-                    <h2 class="text-[2rem] font-bold">Enjoy on your TV</h2>
-                    <p class="mt-4 text-lg font-normal">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and
+            <div class="flex flex-col lg:justify-center lg:flex-row lg:max-w-lgMaxW text-center items-center m-auto max-w-custom">
+                <div class="flex flex-col text-center lg:text-left lg:pr-1.5 w-full basis-1/2">
+                    <h2 class="text-[2rem] lg:text-5xl font-black">Enjoy on your TV</h2>
+                    <p class="mt-4 text-lg lg:text-2xl font-normal">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and
                         more</p>
                 </div>
-                <div class="relative">
-                    <img class="w-full" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+                <div class="relative lg:pl-[0.375rem]">
+                    <img class="w-full lg:w-[27.625rem]" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
                     <div class="absolute top-[48%] left-[50%] overflow-hidden w-full h-full max-w-[72%] max-h-[54%] transform -translate-x-1/2 -translate-y-1/2">
                         <video autoplay playsinline muted loop src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"></video>
                     </div>
@@ -56,12 +55,12 @@
             
         </div>
         <div class="relative flex justify-center text-center h-full min-h-auto py-14 bg-black text-white border-b-8 border-greyishBlack">
-            <div class="flex flex-col text-center items-center m-auto max-w-custom">
-                <div class="flex flex-col text-center w-full basis-1/2">
-                    <h2 class="text-[2rem] font-bold">Download your shows to watch offline</h2>
-                    <p class="mt-4 text-lg font-normal">Save your favorites easily and always have something to watch.</p>
+            <div class="flex flex-col lg:justify-center lg:flex-row-reverse text-center items-center m-auto max-w-custom">
+                <div class="flex flex-col text-center lg:text-left lg:pr-1.5 w-full basis-1/2">
+                    <h2 class="text-[2rem] lg:text-5xl lg:font-black font-bold">Download your shows to watch offline</h2>
+                    <p class="mt-4 text-lg lg:text-2xl font-normal">Save your favorites easily and always have something to watch.</p>
                 </div>
-                <div class="relative">
+                <div class="relative lg:pl-[0.375rem]">
                     <img class="w-full" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="">
                     <div class="absolute bg-black left-[50%] bottom-[8%] flex items-center w-[60%] min-w-60 py-1 px-[0.65rem] border rounded-xl m-auto overflow-hidden max-w-[72%] max-h-[54%] transform -translate-x-1/2">
                         <div class="mr-4 flex-grow-0 flex-shrink-0">
@@ -84,22 +83,22 @@
             </div>
         </div>
         <div class="relative flex justify-center text-center h-full min-h-auto py-14 bg-black text-white border-b-8 border-greyishBlack">
-            <div class="flex flex-col text-center items-center m-auto max-w-custom">
-                <div class="flex flex-col text-center w-full basis-1/2">
-                    <h2 class="text-[2rem] font-bold">Create profiles for kids</h2>
-                    <p class="mt-4 text-lg font-normal">Send kids on adventures with their favorite characters in a space made just for them--free with your membership.</p>
+            <div class="flex flex-col lg:justify-center lg:flex-row-reverse text-center items-center m-auto max-w-custom">
+                <div class="flex flex-col text-center lg:text-left lg:pl-1.5 w-full basis-1/2">
+                    <h2 class="text-[2rem] lg:text-5xl font-bold">Create profiles for kids</h2>
+                    <p class="mt-4 text-lg lg:text-2xl font-normal">Send kids on adventures with their favorite characters in a space made just for them--free with your membership.</p>
                 </div>
-                <div class="relative">
+                <div class="relative lg:pr-[0.375rem]">
                     <img class="w-full" src="https://occ-0-3680-358.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABejKYujIIDQciqmGJJ8BtXkYKKTi5jiqexltvN1YmvXYIfX8B9CYwooUSIzOKneblRFthZAFsYLMgKMyNfeHwk16DmEkpIIcb6A3.png?r=f55" alt="">
                 </div>
             </div>
         
         </div>
         <div class="relative flex justify-center text-center h-full min-h-auto py-14 bg-black text-white border-b-8 border-greyishBlack">
-            <div class="flex flex-col text-center items-center m-auto max-w-custom">
+            <div class="flex flex-col text-center items-center m-auto w-full max-w-custom xl:max-w-headerW">
                 <div class="w-full basis-1/2">
                     <h2 class="text-[2rem] font-bold">Frequently Asked Questions</h2>
-                    <div class="mt-6">
+                    <div class="mt-6 w-full">
                         <ul class="text-lg font-normal list-none">
                             <li class="mb-2">
                                 <h3 class="relative mb-[0.0625rem] bg-greyishBlack text-white transition-colors duration-200 ease-custom">
@@ -193,13 +192,13 @@
                             <div class="text-center max-w-[61.5rem] m-auto px-6 content-1">
                                 <form class="flex flex-col " action="" aria-label="sign up or restart your membership with Netflix">
                                     <h3 class="text-lg font-normal">Ready to watch? Enter your email to create or restart your membership</h3>
-                                    <div class="relative flex flex-col items-center text-left mt-4 mx-auto w-full max-w-[36.625rem]">
-                                        <div class="relative inline-flex flex-wrap">
+                                    <div class="relative flex flex-col md:flex-row items-center text-left mt-4 mx-auto w-full max-w-[36.625rem]  md:gap-x-2">
+                                        <div class="relative inline-flex flex-wrap md:w-2/3">
                                             <div class="relative inline-flex items-center text-left gap[2px] text[1rem] font-normal text-white w-full min-w-[12.5rem] fill-current">
-                                                <input type="email" autocomplete="email" minlength="5" maxlength="50" name="email" aria-label="email input field" placeholder="Email address" required class="w-full text-[1rem] py-4 px-4 bg-[rgba(22,22,22,0.7)] border border-[rgba(128,128,128,0.7)] rounded-[0.25rem]">
+                                                <input type="email" autocomplete="email" minlength="5" maxlength="50" name="email" aria-label="email input field" placeholder="Email address" required class="w-full text-[1rem] pt-4 pb-3.5 px-4 bg-[rgba(22,22,22,0.7)] border border-[rgba(128,128,128,0.7)] rounded-[0.25rem]">
                                             </div>
                                         </div>
-                                        <button class="inline-flex justify-center fill-current mt-4 items-center py-2 px-4 text-lg font-medium bg-netflixRed  w-auto min-h-12 rounded-[0.24rem] select-none" role="button" type="submit">
+                                        <button class="inline-flex justify-center fill-current mt-4 items-center py-2 px-4 text-lg font-medium bg-netflixRed  w-auto min-h-12 rounded-[0.24rem] md:min-h-[3.5rem]  select-none md:w-1/3 md:mt-0" role="button" type="submit">
                                             Get started
                                             <div class="inline-block" aria-hidden="true">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="24" height="24" viewBox="0 0 24 24" role="img"
@@ -220,7 +219,7 @@
         </div>
         
     </main>
-    <footer class="px-6 my-8 text-base font-normal bg-black text-white">
+    <footer class="px-6 my-8 text-base font-normal bg-black text-white xl:max-w-headerW lg:m-auto lg:px-8 xl:px-12 lg:my-[4.5rem]" >
         <div class="w-full h-auto">
             <div class="inline-flex flex-wrap w-full">
                 <div class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 basis-full">
@@ -234,63 +233,63 @@
                         <div class="w-full h-auto">
                             <ul class="inline-flex flex-row flex-wrap w-custom mb-4">
                                 <li
-                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW underline">
+                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW lg:basis-basisW1 underline">
                                     <a href="https://help.netflix.com/support/412">FAQ</a>
                                 </li>
                                 <li
-                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW underline">
+                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW lg:basis-basisW1 underline">
                                     <a href="https://help.netflix.com/support/412">Help Center</a>
                                 </li>
                                 <li
-                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW underline">
+                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW lg:basis-basisW1 underline">
                                     <a href="https://help.netflix.com/support/412">Account</a>
                                 </li>
                                 <li
-                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW underline">
+                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW lg:basis-basisW1 underline">
                                     <a href="https://help.netflix.com/support/412">Media Center</a>
                                 </li>
                                 <li
-                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW underline">
+                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW lg:basis-basisW1 underline">
                                     <a href="https://help.netflix.com/support/412">Investor Relations</a>
                                 </li>
                                 <li
-                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW underline">
+                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW lg:basis-basisW1 underline">
                                     <a href="https://help.netflix.com/support/412">Jobs</a>
                                 </li>
                                 <li
-                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW underline">
+                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW lg:basis-basisW1 underline">
                                     <a href="https://help.netflix.com/support/412">Ways to Watch</a>
                                 </li>
                                 <li
-                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW underline">
+                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW lg:basis-basisW1 underline">
                                     <a href="https://help.netflix.com/support/412">Terms of Use</a>
                                 </li>
                                 <li
-                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW underline">
+                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW lg:basis-basisW1 underline">
                                     <a href="https://help.netflix.com/support/412">Privacy</a>
                                 </li>
                                 <li
-                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW underline">
+                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW lg:basis-basisW1 underline">
                                     <a href="https://help.netflix.com/support/412">Cookie Preferences</a>
                                 </li>
                                 <li
-                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW underline">
+                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW lg:basis-basisW1 underline">
                                     <a href="https://help.netflix.com/support/412">Corporate Information</a>
                                 </li>
                                 <li
-                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW underline">
+                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW lg:basis-basisW1 underline">
                                     <a href="https://help.netflix.com/support/412">Contact Us</a>
                                 </li>
                                 <li
-                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW underline">
+                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW lg:basis-basisW1 underline">
                                     <a href="https://help.netflix.com/support/412">Speed Test</a>
                                 </li>
                                 <li
-                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW underline">
+                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW lg:basis-basisW1 underline">
                                     <a href="https://help.netflix.com/support/412">Legal Notices</a>
                                 </li>
                                 <li
-                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW underline">
+                                    class="inline-flex flex-wrap flex-grow-0 flex-shrink-0 mt-4 ml-3 basis-basisW lg:basis-basisW1 underline">
                                     <a href="https://help.netflix.com/support/412">Only on Netflix</a>
                                 </li>
                             </ul>
