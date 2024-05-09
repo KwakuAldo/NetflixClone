@@ -554,6 +554,10 @@ video {
   --tw-contain-style:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -784,6 +788,10 @@ video {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-headerW {
+  max-width: calc(66.66666666666666% - 6rem);
 }
 
 .flex-shrink-0 {
