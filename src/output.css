@@ -790,10 +790,6 @@ video {
   max-width: 100%;
 }
 
-.max-w-headerW {
-  max-width: calc(66.66666666666666% - 6rem);
-}
-
 .flex-shrink-0 {
   flex-shrink: 0;
 }
@@ -1099,14 +1095,14 @@ video {
   color: rgb(0 113 235 / var(--tw-text-opacity));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-netflixRed {
   --tw-text-opacity: 1;
   color: rgb(229 9 20 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1224,10 +1220,6 @@ video {
     max-width: calc(100% - 4rem);
   }
 
-  .lg\:max-w-headerW {
-    max-width: calc(66.66666666666666% - 6rem);
-  }
-
   .lg\:basis-basisW1 {
     flex-basis: calc(25% - 0.75rem);
   }
@@ -1306,11 +1298,6 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:my-\[4\.5rem\] {
-    margin-top: 4.5rem;
-    margin-bottom: 4.5rem;
-  }
-
   .xl\:max-w-headerW {
     max-width: calc(66.66666666666666% - 6rem);
   }
@@ -1318,11 +1305,5 @@ video {
   .xl\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
-  }
-}
-
-@media (min-width: 1920px) {
-  .\32xl\:basis-basisW1 {
-    flex-basis: calc(25% - 0.75rem);
   }
 }
