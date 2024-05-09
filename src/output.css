@@ -1104,6 +1104,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-netflixRed {
+  --tw-text-opacity: 1;
+  color: rgb(229 9 20 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
