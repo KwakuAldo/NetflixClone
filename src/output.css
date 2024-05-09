@@ -1187,6 +1187,10 @@ video {
     min-width: 12.5rem;
   }
 
+  .md\:max-w-headerW {
+    max-width: calc(66.66666666666666% - 6rem);
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
