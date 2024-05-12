@@ -7,13 +7,13 @@ document.addEventListener('DOMContentLoaded', function() {
         // listen for clicks/taps
         button.addEventListener('click', function (e) {
             e.stopPropagation();
-            let idNum = this.id.split('-')[1];
-            let cardEl = document.getElementById('faq-' + idNum + '-element');
-            if (currentOpen && currentOpen !== cardEl) {
+            let idNumber = this.id.split('-')[1];
+            let cardElement = document.getElementById('faq-' + idNumber + '-element');
+            if (currentOpen && currentOpen !== cardElement) {
                 currentOpen.classList.add('hidden');
             }
-            cardEl.classList.toggle('hidden')
-            currentOpen = cardEl.classList.contains('hidden') ? null : cardEl;
+            cardElement.classList.toggle('hidden')
+            currentOpen = cardElement.classList.contains('hidden') ? null : cardElement;
             console.log("button clicked")
         })
     })
